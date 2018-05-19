@@ -1,0 +1,35 @@
+{
+  "name": "in-class-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/app.ts",
+    "test": "jest"
+  },
+  "author": "@cocowmn",
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.)(test))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.4",
+    "nodemon": "^1.17.4",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  }
+}
